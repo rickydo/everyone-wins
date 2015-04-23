@@ -6,12 +6,18 @@ application up and running.
 Things you may want to cover:
 
 * Ruby version
+Ruby 2.2.0 on Rails 4.2.0
 
 * System dependencies
+Postgres db
 
 * Configuration
 
 * Database creation
+In the process of trying to get a hello world to come up I ran into a problem with no database.
+I used rake db:create:all to create the development database. 
+Someone also suggested to use rake db:migrate afterwards but I didn't need to at the time because I 
+didn't have models or a schema yet.
 
 * Database initialization
 

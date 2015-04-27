@@ -1,9 +1,15 @@
 <div>
 	<h1>Welcome to EverybodyWins</h1>
 	<h3>More content</h3>
-
-	<%= link_to_if(current_admin == nil, "Login", new_admin_session_path)%>
-	<%= link_to_if(current_admin == nil, "Sign Up", new_admin_registration_path)%>
-	<%= link_to "Add a helper", new_user_path %>
 	
+	<%= link_to "All Users", users_path %>
+
+	<p>Next to receive help</p>
+
+	<p>Day selected for help distribution(managed by admin)</p>
+
+
+	<% if admin_session != nil %>
+		<%= link_to "Add a helper", new_user_path %>
+	<% end %>
 </div>

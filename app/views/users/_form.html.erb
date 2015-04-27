@@ -21,7 +21,7 @@
   </div>
   <div class="field">
     <%= f.label :dob %><br>
-    <%= f.datetime_select :dob %>
+    <%= f.date_select( :dob, :order => [:month, :day, :year], :start_year => 1930, :end_year => Time.now.year )%>
   </div>
   <div class="actions">
     <%= f.submit %>

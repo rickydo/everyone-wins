@@ -1,1 +1,6 @@
 <%= link_to "Home", root_path %>
+
+<% if admin_session.nil? %>
+	<%= link_to  "Login", new_admin_session_path%>
+	<%= link_to  "Sign Up", new_admin_registration_path%>
+<% end %>

@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
 	def dob_format
-		self.strftime()
+		self.dob.strftime("%m/%d/%Y")
 	end
 end
